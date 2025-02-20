@@ -22,6 +22,12 @@
             "en": 1
           },
           "language": "en"
+        },
+        {
+          "path": "./3.json",
+          "file_format": "i18next_json",
+          "tag": "3",
+          "language": "en"
         }
       ]
     },
@@ -43,6 +49,14 @@
           "tag": "2",
           "excludeHeaderRow": true,
           "excludeBaseLang": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.json",
+          "file_format": "i18next_json",
+          "tag": "3",
           "exclude_languages": [
             "en"
           ]

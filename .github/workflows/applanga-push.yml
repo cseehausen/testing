@@ -6,7 +6,6 @@ on:
     paths:
       - 1.csv
       - 2.csv
-      - 3.json
   workflow_dispatch:
     inputs:
       push_targets:

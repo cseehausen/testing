@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - 1.csv
+      - 1.xlsx
       - 2.csv
   workflow_dispatch:
     inputs:

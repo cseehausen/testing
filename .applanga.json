@@ -9,6 +9,21 @@
           "tag": "app:language.csv",
           "columnDescription": {
             "KEY": 0,
+            "en": 1,
+            "DESCRIPTION": "",
+            "LENGTH": "",
+            "METADATA_abc": "2",
+            "METADATA_bca": "3"
+          },
+          "excludeHeaderRow": true,
+          "language": "en"
+        },
+        {
+          "path": "./1.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
+          "columnDescription": {
+            "KEY": 0,
             "en": 1
           },
           "excludeHeaderRow": true,
@@ -17,12 +32,17 @@
         {
           "path": "./2.csv",
           "file_format": "csv",
-          "tag": "app:language.csv",
+          "tag": "app:language.csv2",
           "columnDescription": {
             "KEY": 0,
-            "en": 1
+            "en": 1,
+            "METADATA_abc": "2"
           },
-          "excludeHeaderRow": true,
+          "key_prefix": "abc",
+          "excludeHeaderRow": false,
+          "autoGenerateMissingKeys": false,
+          "keepTagIds": false,
+          "remove_cr_char": false,
           "language": "en"
         }
       ]
@@ -37,6 +57,24 @@
           "excludeBaseLang": true,
           "columnDescription": {
             "KEY": 0,
+            "DESCRIPTION": "",
+            "LENGTH": "",
+            "METADATA_abc": "2",
+            "METADATA_bca": "3",
+            "<language>": 1
+          },
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "columnDescription": {
+            "KEY": 0,
             "<language>": 1
           },
           "exclude_languages": [
@@ -46,13 +84,15 @@
         {
           "path": "./<language>.csv",
           "file_format": "csv",
-          "tag": "app:language.csv",
+          "tag": "app:language.csv2",
           "excludeHeaderRow": true,
           "excludeBaseLang": true,
           "columnDescription": {
             "KEY": 0,
+            "METADATA_abc": "2",
             "<language>": 1
           },
+          "key_prefix": "abc",
           "exclude_languages": [
             "en"
           ]

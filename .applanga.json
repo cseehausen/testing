@@ -4,9 +4,9 @@
     "push": {
       "source": [
         {
-          "path": "./1.csv",
-          "file_format": "csv",
-          "tag": "app:language.csv",
+          "path": "./1.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
           "columnDescription": {
             "KEY": 0,
             "en": 1
@@ -19,9 +19,9 @@
     "pull": {
       "target": [
         {
-          "path": "./<language>.csv",
-          "file_format": "csv",
-          "tag": "app:language.csv",
+          "path": "./<language>.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
           "excludeHeaderRow": true,
           "excludeBaseLang": true,
           "columnDescription": {

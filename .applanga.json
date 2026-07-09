@@ -1,0 +1,127 @@
+{
+  "app": {
+    "base_language": "en",
+    "push": {
+      "source": [
+        {
+          "path": "./1.csv",
+          "file_format": "csv",
+          "tag": "app:language.csv",
+          "columnDescription": {
+            "KEY": 0,
+            "en": 1
+          },
+          "excludeHeaderRow": true,
+          "language": "en"
+        },
+        {
+          "path": "./1.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
+          "columnDescription": {
+            "KEY": 0,
+            "en": 1
+          },
+          "excludeHeaderRow": true,
+          "language": "en"
+        },
+        {
+          "path": "./2.csv",
+          "file_format": "csv",
+          "tag": "app:language:6282.csv",
+          "columnDescription": {
+            "KEY": 0,
+            "en": 1
+          },
+          "excludeHeaderRow": true,
+          "language": "en"
+        },
+        {
+          "path": "./2.xlsx",
+          "file_format": "xls",
+          "tag": "app:language:4080.xls",
+          "columnDescription": {
+            "KEY": 0,
+            "en": 1
+          },
+          "excludeHeaderRow": true,
+          "language": "en"
+        },
+        {
+          "path": "./3.json",
+          "file_format": "mozilla_i18n_json",
+          "tag": "app:messages.json",
+          "language": "en"
+        }
+      ]
+    },
+    "pull": {
+      "target": [
+        {
+          "path": "./<language>.csv",
+          "file_format": "csv",
+          "tag": "app:language.csv",
+          "columnDescription": {
+            "KEY": 0,
+            "<language>": 1
+          },
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.xlsx",
+          "file_format": "xls",
+          "tag": "app:language.xls",
+          "columnDescription": {
+            "KEY": 0,
+            "<language>": 1
+          },
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.csv",
+          "file_format": "csv",
+          "tag": "app:language:6282.csv",
+          "columnDescription": {
+            "KEY": 0,
+            "<language>": 1
+          },
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.xlsx",
+          "file_format": "xls",
+          "tag": "app:language:4080.xls",
+          "columnDescription": {
+            "KEY": 0,
+            "<language>": 1
+          },
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./<language>.json",
+          "file_format": "mozilla_i18n_json",
+          "tag": "app:messages.json",
+          "exclude_languages": [
+            "en"
+          ]
+        }
+      ]
+    }
+  }
+}
